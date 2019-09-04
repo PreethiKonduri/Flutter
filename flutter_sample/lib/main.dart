@@ -70,10 +70,7 @@ class _RegistrationState extends State<RegistrationUI> {
               padding: const EdgeInsets.all(8.0),
               child: TextFormField(
                 decoration: InputDecoration(hintText: "First Name"),
-                onFieldSubmitted: (value){
-
-                },
-
+                onFieldSubmitted: (value) {},
               ),
             ),
             Padding(
@@ -99,10 +96,14 @@ class _RegistrationState extends State<RegistrationUI> {
             ),
 //            Spacer(),
             RaisedButton(
-                child: Text("Register"),
-
-                color: Colors.deepPurple,
-                )
+              child: Text("Register"),
+              disabledColor: Colors.pink,
+              color: Colors.deepPurple,
+            ),
+            CircleAvatar(
+              radius: 30.0,
+              backgroundImage: ExactAssetImage("assets/androidimg_2.jpeg"),
+            )
           ],
         ),
       ),
